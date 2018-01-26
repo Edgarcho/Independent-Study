@@ -10,4 +10,7 @@ public class Birthday {
     public int getYear(){
         return year;
     }
+    public int getMonth(){
+        return 0;
+    }
 }
