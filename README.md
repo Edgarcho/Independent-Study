@@ -1,7 +1,6 @@
-#Birthday Date
+# Birthday Date
 
-#### A program that prompt the user questions about when they were born and will return the actually weekday they were born and some random fact about their birthday/
-1/26/18
+#### A program that prompt the user questions about when they were born and will return the actually weekday they were born and some random fact about their birthday 1/26/18
 
 #### By **Edgar Hernandez Ortiz**
 
