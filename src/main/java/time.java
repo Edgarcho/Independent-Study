@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 public class time {
     public static void main(String[] args) {
         //Using Date class
-      /*  Date now = new Date();
+        /*  Date now = new Date();
         long nowLong = now.getTime();
         System.out.println("Value is " + nowLong);
         */
@@ -19,7 +19,7 @@ public class time {
         DateFormat df1 = DateFormat.getDateInstance(DateFormat.SHORT);
         DateFormat df2 = DateFormat.getDateInstance(DateFormat.LONG);
         DateFormat df3 = DateFormat.getDateInstance(DateFormat.MEDIUM);
-        DateFormat df4 = DateFormat.getDateInstance(DateFormat.AM_PM_FIELD);
+        DateFormat df4 = DateFormat.getDateInstance(DateFormat.FULL);
         String s = df.format(now);
         String s1 = df1.format(now);
         String s2 = df2.format(now);
