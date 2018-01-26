@@ -5,14 +5,17 @@ public class Birthday {
     private int year;
     private int month;
 
-    public Birthday(int year, int month, int date) {
+    public Birthday(int year, int month, int day) {
         this.year = year;
         this.month = month;
     }
     public int getYear(){
         return year;
     }
-    public int getMonth(){
+    public int getMonth() {
         return month;
-}
+    }
+    public int getDay(){
+        return 0;
+    }
 }
