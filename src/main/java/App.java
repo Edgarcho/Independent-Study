@@ -21,7 +21,7 @@ public class App {
             int intUserMonth = Integer.parseInt(userMonth);
             int intUserDay = Integer.parseInt(userDay);
             Birthday newBirthday = new Birthday(intUserYear,intUserMonth,intUserDay);
-            System.out.println(newBirthday.dateFullForm());
+            System.out.println("You were born on " + newBirthday.dateFullForm());
         }
         catch(IOException e)
         {
