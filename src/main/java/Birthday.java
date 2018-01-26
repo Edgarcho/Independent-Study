@@ -1,3 +1,7 @@
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 /**
  * Created by Guest on 1/26/18.
  */
@@ -19,5 +23,12 @@ public class Birthday {
     }
     public int getDay(){
         return day;
+    }
+    public String dateFullForm(){
+        GregorianCalendar bday = new GregorianCalendar(getYear(),getMonth(),getDay());
+        Date d = bday.getTime();
+        DateFormat df1 = DateFormat.getDateInstance(DateFormat.FULL);
+        String s1 = df1.format(d);
+        return s1;
     }
 }
