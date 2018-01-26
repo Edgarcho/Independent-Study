@@ -1,3 +1,4 @@
+import java.text.DateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -6,8 +7,15 @@ import java.util.GregorianCalendar;
  */
 public class time {
     public static void main(String[] args) {
-        Date now = new Date();
+        //Using Date class
+      /*  Date now = new Date();
         long nowLong = now.getTime();
         System.out.println("Value is " + nowLong);
+        */
+        //Using DateFormat class
+        Date now = new Date();
+        DateFormat df = DateFormat.getDateInstance();
+        String s = df.format(now);
+        System.out.println("Today is" + s);
     }
 }
