@@ -31,7 +31,7 @@ public class Birthday {
     }
 
     public String dateFullForm(){
-        GregorianCalendar bday = new GregorianCalendar(getYear(),getMonth(),getDay());
+        GregorianCalendar bday = new GregorianCalendar(getYear(),adjustMonth(),getDay());
         Date bdayDate = bday.getTime();
         DateFormat df1 = DateFormat.getDateInstance(DateFormat.FULL);
         String birthdayFullForm = df1.format(bdayDate);
