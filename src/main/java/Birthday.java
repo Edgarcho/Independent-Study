@@ -25,8 +25,11 @@ public class Birthday {
         return day;
     }
     public int adjustMonth(){
-        return 0;
+        int oldMonth = getMonth();
+        int gregorianAdjustment = oldMonth - 1;
+        return gregorianAdjustment;
     }
+
     public String dateFullForm(){
         GregorianCalendar bday = new GregorianCalendar(getYear(),getMonth(),getDay());
         Date bdayDate = bday.getTime();
