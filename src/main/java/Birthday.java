@@ -4,4 +4,7 @@
 public class Birthday {
     public Birthday(int year, int month, int date) {
     }
+    public int getYear(){
+        return 0;
+    }
 }
