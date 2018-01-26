@@ -33,6 +33,6 @@ public class BirthdayTest {
     @Test
     public void dateFullForm_transformDateintoString_Full() throws Exception {
         Birthday testBirtday = new Birthday(1992,3,6);
-        assertEquals("Wednesday, November 8, 2000", testBirtday.dateFullForm());
+        assertEquals("Friday, March 6, 1992", testBirtday.dateFullForm());
     }
 }
