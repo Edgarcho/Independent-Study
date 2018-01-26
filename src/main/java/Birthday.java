@@ -3,14 +3,16 @@
  */
 public class Birthday {
     private int year;
+    private int month;
 
     public Birthday(int year, int month, int date) {
         this.year = year;
+        this.month = month;
     }
     public int getYear(){
         return year;
     }
     public int getMonth(){
-        return 0;
-    }
+        return month;
+}
 }

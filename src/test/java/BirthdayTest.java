@@ -21,6 +21,6 @@ public class BirthdayTest {
     @Test
     public void newBirthday_getMonth_3() throws Exception {
         Birthday testBirthday = new Birthday(1992,3,6);
-        assertEquals(1992, testBirthday.getMonth());
+        assertEquals(3, testBirthday.getMonth());
     }
 }
