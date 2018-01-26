@@ -4,10 +4,12 @@
 public class Birthday {
     private int year;
     private int month;
+    private int day;
 
     public Birthday(int year, int month, int day) {
         this.year = year;
         this.month = month;
+        this.day = day;
     }
     public int getYear(){
         return year;
@@ -16,6 +18,6 @@ public class Birthday {
         return month;
     }
     public int getDay(){
-        return 0;
+        return day;
     }
 }
