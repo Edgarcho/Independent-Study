@@ -31,6 +31,12 @@ public class BirthdayTest {
     }
 
     @Test
+    public void changeMonth_getMonthMinus1_2() throws Exception {
+        Birthday testBirthday = new Birthday(1992, 3,6);
+        assertEquals(2,testBirthday.adjustMonth());
+    }
+
+    @Test
     public void dateFullForm_transformDateintoString_Full() throws Exception {
         Birthday testBirtday = new Birthday(1992,3,6);
         assertEquals("Friday, March 6, 1992", testBirtday.dateFullForm());

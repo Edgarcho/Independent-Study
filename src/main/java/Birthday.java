@@ -24,11 +24,14 @@ public class Birthday {
     public int getDay(){
         return day;
     }
+    public int adjustMonth(){
+        return 0;
+    }
     public String dateFullForm(){
         GregorianCalendar bday = new GregorianCalendar(getYear(),getMonth(),getDay());
-        Date d = bday.getTime();
+        Date bdayDate = bday.getTime();
         DateFormat df1 = DateFormat.getDateInstance(DateFormat.FULL);
-        String s1 = df1.format(d);
-        return s1;
+        String birthdayFullForm = df1.format(bdayDate);
+        return birthdayFullForm;
     }
 }
