@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.ParseException;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -36,17 +37,12 @@ public class time {
         System.out.println("Today is " + s3);
         System.out.println("Today is " + s4);
         */
-        System.out.println("Enter full date?");
-        try{
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            String ds = bufferedReader.readLine();
-            DateFormat df = DateFormat.getDateInstance();
-            Date d = df.parse(ds);
-            System.out.println("Date");
-        }
-        catch (ParseException e)
-        {
-            System.out.println("Unable to parse" + ds);
-        }
+     GregorianCalendar firstFlight = new GregorianCalendar(1903, Calendar.DECEMBER, 17);
+     //GregorianCalendar secondFlight = new GregorianCalendar(1903,11,17);
+    Date d = firstFlight.getTime();
+    DateFormat df = DateFormat.getDateInstance();
+    String s = df.format(d);
+    System.out.println("Today is " + s);
+
     }
 }
