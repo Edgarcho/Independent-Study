@@ -37,13 +37,11 @@ public class time {
         System.out.println("Today is " + s3);
         System.out.println("Today is " + s4);
 
-    GregorianCalendar thur = new GregorianCalendar();
-    Date d = thur.getTime();
-    DateFormat df = DateFormat.getDateInstance();
-    String s = df.format(d);
-    System.out.println("Today is " + s);
-
-    */
+        GregorianCalendar thur = new GregorianCalendar();
+        Date d = thur.getTime();
+        DateFormat df = DateFormat.getDateInstance();
+        String s = df.format(d);
+        System.out.println("Today is " + s);
 
         GregorianCalendar worldTour = new GregorianCalendar(1872,10,2);
         worldTour.add(GregorianCalendar.DATE, 80);
@@ -52,6 +50,7 @@ public class time {
         String s = df.format(d);
         System.out.println("80 day trip will end " + s);
 
+        */
 
     }
 }
