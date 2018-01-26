@@ -29,4 +29,10 @@ public class BirthdayTest {
         Birthday testBirthday = new Birthday(1992,3,6);
         assertEquals(6,testBirthday.getDay());
     }
+
+    @Test
+    public void dateFullForm_transformDateintoString_Full() throws Exception {
+        Birthday testBirtday = new Birthday(1992,3,6);
+        assertEquals("Wednesday, November 8, 2000", testBirtday.dateFullForm());
+    }
 }
