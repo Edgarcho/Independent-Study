@@ -37,9 +37,8 @@ public class time {
         System.out.println("Today is " + s3);
         System.out.println("Today is " + s4);
         */
-     GregorianCalendar firstFlight = new GregorianCalendar(1903, Calendar.DECEMBER, 17);
-     //GregorianCalendar secondFlight = new GregorianCalendar(1903,11,17);
-    Date d = firstFlight.getTime();
+   GregorianCalendar thur = new GregorianCalendar();
+    Date d = thur.getTime();
     DateFormat df = DateFormat.getDateInstance();
     String s = df.format(d);
     System.out.println("Today is " + s);
