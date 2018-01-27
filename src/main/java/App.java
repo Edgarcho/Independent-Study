@@ -30,7 +30,7 @@ public class App {
                     int intUserDay = Integer.parseInt(userDay);
                     Birthday newBirthday = new Birthday(intUserYear, intUserMonth, intUserDay);
                     System.out.println("You were born on " + newBirthday.dateFullForm());
-                    System.out.println("You are currently " + newBirthday.age());
+                    System.out.println("You are currently: " + newBirthday.age());
                 } else if (navigationChoice.equals("no")) {
                     System.out.println("Goodbye!");
                     programRunning = false;
