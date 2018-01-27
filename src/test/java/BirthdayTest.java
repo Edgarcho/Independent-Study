@@ -40,7 +40,7 @@ public class BirthdayTest {
     @Test
     public void dateFullForm_transformDateintoString_Full() throws Exception {
         Birthday testBirthday = new Birthday(1992,3,6);
-        assertEquals("Friday, March 6, 1992", testBirtday.dateFullForm());
+        assertEquals("Friday, March 6, 1992", testBirthday.dateFullForm());
     }
 
     @Test
