@@ -14,6 +14,7 @@ A command line application created with Java where a user can submit their respo
 | **Program take a single date and return back.** |"1992-3-6"|"1992-3-6"|
 | **Program convert the date into a string.**|"1992-3-6"|March 6 1992|
 | **Program return the actual day you were born.**|"1992-3-6"|Friday, March 6 1992|
+| **Program return current age.**|"1992-3-6"|25|
 
 
 ## Setup/Installation Requirements
