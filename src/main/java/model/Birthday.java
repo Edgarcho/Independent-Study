@@ -2,6 +2,7 @@ package model;
 
 import java.text.DateFormat;
 import java.time.LocalDate;
+import java.time.Year;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -40,7 +41,9 @@ public class Birthday {
         String birthdayFullForm = df1.format(bdayDate);
         return birthdayFullForm;
     }
-    public String age(){
-        return null;
+    public int age(){
+        GregorianCalendar now = new GregorianCalendar();
+        int age = now.get(GregorianCalendar.YEAR)-getYear();
+        return age;
     }
 }
