@@ -41,9 +41,20 @@ public class Birthday {
         String birthdayFullForm = df1.format(bdayDate);
         return birthdayFullForm;
     }
-    public int age(){
+    public int age() {
         GregorianCalendar now = new GregorianCalendar();
-        int age = now.get(GregorianCalendar.YEAR)-getYear();
+        int age = now.get(GregorianCalendar.YEAR) - getYear();
+        int birthMonth = adjustMonth();
+        int birthDay = getDay();
+        int nowMonth = now.get(GregorianCalendar.MONTH);
+        int nowDay = now.get(GregorianCalendar.DAY_OF_MONTH);
+
+        if (nowMonth >= birthMonth) {
+            age = age + 1;
+        } else if (nowMonth < birthMonth){
+            age = age - 1;
+            }
         return age;
+        }
+
     }
-}
