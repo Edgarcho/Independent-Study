@@ -39,7 +39,13 @@ public class BirthdayTest {
 
     @Test
     public void dateFullForm_transformDateintoString_Full() throws Exception {
-        Birthday testBirtday = new Birthday(1992,3,6);
+        Birthday testBirthday = new Birthday(1992,3,6);
         assertEquals("Friday, March 6, 1992", testBirtday.dateFullForm());
+    }
+
+    @Test
+    public void age_getCurrentAge_25() throws Exception {
+        Birthday testBirthday = new Birthday(1992,3,6);
+        assertEquals(25, testBirthday.age());
     }
 }

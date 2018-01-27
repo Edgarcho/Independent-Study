@@ -1,6 +1,7 @@
 package model;
 
 import java.text.DateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -38,5 +39,8 @@ public class Birthday {
         DateFormat df1 = DateFormat.getDateInstance(DateFormat.FULL);
         String birthdayFullForm = df1.format(bdayDate);
         return birthdayFullForm;
+    }
+    public String age(){
+
     }
 }
